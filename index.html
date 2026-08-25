@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Glass Weather Widget</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-card">
+
+    <div class="top-section">
+
+      <div class="header">
+
+        <div class="weather-icon">
+          <img src="sun icon.png" alt="Cloudy weather">
+        </div>
+
+        <div class="headline">
+
+          <!-- Live, real-time date & time — updated every second by script.js -->
+          <div class="datetime" id="datetime">
+            Loading...
+          </div>
+
+          <div class="condition">
+            Cloudy 10&deg;C
+          </div>
+
+          <div class="location">
+            Dhaka, Bangladesh
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sun-times">
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M12 3v5"/>
+          <path d="M12 8l-2.5-2.5"/>
+          <path d="M12 8l2.5-2.5"/>
+          <circle cx="12" cy="14" r="3.4" fill="#fff" stroke="none"/>
+          <path d="M4 18h16"/>
+        </svg>
+
+        <span>4:53 am</span>
+        <span class="dash"></span>
+        <span>15 h 32 m</span>
+        <span class="dash"></span>
+        <span>8:13 pm</span>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M12 9V4"/>
+          <path d="M12 4l-2.5 2.5"/>
+          <path d="M12 4l2.5 2.5"/>
+          <circle cx="12" cy="14" r="3.4" fill="#fff" stroke="none"/>
+          <path d="M4 18h16"/>
+        </svg>
+
+      </div>
+
+    </div>
+
+    <div class="rain-row">
+      <span>&#127783;&#65039;</span>
+      <span>Rain: <b>90%</b></span>
+    </div>
+
+    <div class="stats-row">
+      <span>Humidity: <b>73%</b></span>
+      <span>Wind: <b>10 km/h</b></span>
+    </div>
+
+    <div class="forecast">
+
+      <div class="day-col today">
+        <div class="day-name">Today</div>
+        <div class="icon">&#9729;&#65039;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Wed</div>
+        <div class="icon">&#9925;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Thu</div>
+        <div class="icon">&#9928;&#65039;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Fri</div>
+        <div class="icon">&#9728;&#65039;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Sat</div>
+        <div class="icon">&#9729;&#65039;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Sun</div>
+        <div class="icon">&#127783;&#65039;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+      <div class="day-col">
+        <div class="day-name">Mon</div>
+        <div class="icon">&#9925;</div>
+        <div class="temp-hi">10&deg;</div>
+        <div class="temp-lo">1&deg;</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
